@@ -55,13 +55,13 @@ c_h_s_e:
 #endasm
 
 #asm
-	public	cpm_getch
+	public cpm_getch
 cpm_getch:
 	push	b
-	mvi		c,1
-	mvi		e,0
+	mvi	c,6
+	mvi	e,255
 	call	5
-	pop		b
+	pop	b
 	ret
 #endasm
 
