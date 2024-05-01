@@ -62,6 +62,8 @@ cpm_getch:
 	mvi	e,255
 	call	5
 	pop	b
+	ani	0FFh
+	jz	cpm_getch
 	ret
 #endasm
 
